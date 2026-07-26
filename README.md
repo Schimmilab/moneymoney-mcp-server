@@ -36,3 +36,12 @@ claude mcp add moneymoney -- ~/workspace/moneymoney-mcp-server/.venv/bin/python 
 ```
 
 Danach Claude-Code neu starten; MoneyMoney offen + entsperrt halten.
+
+## Maintainer
+
+Schimmi — https://schimmilab.de
+Issues und Pull Requests willkommen.
+
+## Lizenz
+
+MIT — siehe [LICENSE](LICENSE).
