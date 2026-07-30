@@ -22,7 +22,7 @@ import plistlib
 import subprocess
 from typing import Any
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 
 mcp = FastMCP("moneymoney")
 
