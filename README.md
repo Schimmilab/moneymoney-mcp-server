@@ -21,6 +21,24 @@ Export-Befehle scheitern bei gesperrter DB. Daher **interaktiv**, nicht headless
 
 Icons/Binärdaten werden aus dem Export gestrippt, damit die Ausgabe schlank bleibt.
 
+## ⚠️ Umsatztexte sind Fremddaten
+
+`mm_transactions` gibt **Empfängername und Verwendungszweck wörtlich** zurück. Diese Felder
+werden nicht von dir befüllt, sondern von jedem, der dir Geld überweist — sie sind damit
+Eingaben aus einer nicht vertrauenswürdigen Quelle, genau wie Text von einer fremden Webseite.
+
+Wer 1 Cent überweist, kann dort ablegen, was er will. Steht im Verwendungszweck etwas, das
+wie eine Anweisung an ein Sprachmodell aussieht, liest der Assistent es beim nächsten
+Umsatzabruf mit.
+
+**Dieser Server allein ist read-only und kann kein Geld bewegen** — die Fallhöhe hängt
+deshalb nicht an ihm, sondern an den **anderen** Werkzeugen, die in derselben Sitzung
+verfügbar sind. Wer diesen Server neben schreibenden Tools betreibt, sollte das wissen.
+
+Serverseitig ist das nicht lösbar: Ein Filter, der solche Texte entschärft, würde die
+Nutzdaten zerstören — der Verwendungszweck *ist* der Inhalt. Die Behandlung gehört auf die
+Seite, die die Daten auswertet.
+
 ## Setup
 
 ```bash
