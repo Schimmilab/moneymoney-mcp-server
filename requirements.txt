@@ -1,1 +1,8 @@
-fastmcp>=3,<4
+# Exakt gepinnt statt >=3,<4.
+#
+# Eine offene Untergrenze zieht bei jeder Frischinstallation die neueste 3.x
+# nach — auch eine, die noch nie gegen diesen Server gelaufen ist oder
+# kompromittiert wurde. Gepinnt wird auf den Stand, der hier nachweislich
+# laeuft (venv am 2026-08-15: 3.4.5), nicht auf die neueste vom Index (3.4.7).
+# Anheben ist dann eine bewusste Entscheidung mit Test, kein Nebeneffekt.
+fastmcp==3.4.5
